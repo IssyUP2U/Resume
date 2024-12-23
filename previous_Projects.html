@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <div class="heading">
+            <h1>Previous Projects</h1>
+        </div>
+    </head>
+
+    <body>
+        <div class="item">
+        <img src="WIP.png" alt="This page is under construction"/>
+        <div class="wip">This page is currently under construction.</div>
+        </div>
+
+        <button id="return" type="button" onclick="myFunction()">Return to Homepage</button>
+        <script>
+            function myFunction() {
+                var col=document.getElementById("return");
+                col.style.backgroundColor="#000000"; 
+                window.location.href = "index.html";
+            }
+        </script>
+    </body>
+</html>

@@ -3,10 +3,10 @@
     <head>
         <link rel="stylesheet" href="styles.css"/>
         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <div class="heading">
-            <h1>Isabella Sobey's Resume</h1>
-            <a href="https://github.com/IssyUP2U/Resume">View Github files directly</a>
+            <h1 id="index-name">Isabella Sobey's Resume</h1>
+            <a id="link" href="https://github.com/IssyUP2U/Resume">View Github files directly</a>
         </div>
     </head>
 
@@ -17,11 +17,27 @@
                 <script>
                 function myFunction() {
                     var col=document.getElementById("goToJobs");
-                    col.style.backgroundColor="#000000"; 
+                    col.style.backgroundColor="#000000";
                     window.location.href = "job_experience.html";
                     }
                 </script>
             </div>
         </div>
     </body>
+
+    <body>
+        <div class="item">
+            <div class="section"><p class="title">Previous Projects</p>
+            <button id="goToJobs" type="button" onclick="myFunction2()">See Projects List</button>
+                <script>
+                function myFunction2() {
+                    var col=document.getElementById("goToJobs");
+                    col.style.backgroundColor="#000000";
+                    window.location.href = "previous_Projects.html";
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+
 </html>
