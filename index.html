@@ -9,14 +9,16 @@
             <a id="link" href="https://github.com/IssyUP2U/Resume">View Github files directly</a>
         </div>
     </head>
-
+<div class="flex-container">
     <body>
         <div class="item">
             <div class="section"><p class="title">Previous Job Experience</p>
-            <button id="goToJobs" type="button" onclick="myFunction()">See Job Experience</button>
+            <span class="index-button">
+                <button id="goTo" type="button" onclick="myFunction()">See Job Experience</button>
+            </span>
                 <script>
                 function myFunction() {
-                    var col=document.getElementById("goToJobs");
+                    var col=document.getElementById("goTo");
                     col.style.backgroundColor="#000000";
                     window.location.href = "job_experience.html";
                     }
@@ -26,12 +28,14 @@
     </body>
 
     <body>
-        <div class="item">
+        <div class="item index">
             <div class="section"><p class="title">Previous Projects</p>
-            <button id="goToJobs" type="button" onclick="myFunction2()">See Projects List</button>
+            <span class="index-button">
+                <button id="goTo" type="button" onclick="myFunction2()">See Projects List</button>
+            </span>
                 <script>
                 function myFunction2() {
-                    var col=document.getElementById("goToJobs");
+                    var col=document.getElementById("goTo");
                     col.style.backgroundColor="#000000";
                     window.location.href = "previous_Projects.html";
                     }
@@ -39,5 +43,5 @@
             </div>
         </div>
     </body>
-
+</div>
 </html>
